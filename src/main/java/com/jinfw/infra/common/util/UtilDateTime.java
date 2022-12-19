@@ -1,4 +1,4 @@
-package com.jinfw.infra.common.utill;
+package com.jinfw.infra.common.util;
 
 import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
@@ -14,11 +14,14 @@ public class UtilDateTime {
 		return localDateTime;
 	}
 
-	public static Date nowDate() throws Exception {
+	public static String nowDate() throws Exception {
 		LocalDateTime localDateTime = LocalDateTime.now();
 		String localDateTimeString = localDateTime.format(DateTimeFormatter.ofPattern(Constants.DATETIME_FORMAT_BASIC));
 		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(Constants.DATETIME_FORMAT_BASIC);
-		Date date = simpleDateFormat.parse(localDateTimeString);
+		/*
+		 * Date date = simpleDateFormat.parse(localDateTimeString); return date;
+		 */
+		String date = simpleDateFormat.parse(localDateTimeString).toString();
 		return date;
 	}
 

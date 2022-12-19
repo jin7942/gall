@@ -6,7 +6,7 @@ import javax.servlet.http.HttpServletResponse;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
 import com.jinfw.infra.common.constans.Constants;
-import com.jinfw.infra.common.utill.UtilClient;
+import com.jinfw.infra.common.util.UtilClient;
 
 public class CheckLoginSessionInterception extends HandlerInterceptorAdapter {
 	

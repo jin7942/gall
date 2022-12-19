@@ -1,4 +1,4 @@
-package com.jinfw.infra.common.utill;
+package com.jinfw.infra.common.util;
 
 import javax.servlet.http.HttpServletRequest;
 
